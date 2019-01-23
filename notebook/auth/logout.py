@@ -12,7 +12,7 @@ class LogoutHandler(IPythonHandler):
     def get(self):
         self.clear_login_cookie()
         if self.login_available:
-            message = {'info': 'Successfully logged out.'}
+            message = {'info': 'Successfully logged out. (test version)'}
         else:
             message = {'warning': 'Cannot log out.  Notebook authentication '
                        'is disabled.'}
